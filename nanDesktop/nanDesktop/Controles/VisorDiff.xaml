@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="nanDesktop.Controles.VisorDiff"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" MinHeight="300" >
+    <Grid>
+        <RichTextBox Name="txt"  IsReadOnly="True" BorderBrush="{x:Null}" BorderThickness="0" Background="GhostWhite" Height="400" Margin="0,28,5,0" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" >
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+            <RichTextBox.Document>
+                <FlowDocument PageWidth="65535" />
+            </RichTextBox.Document>
+        </RichTextBox>
+        <ComboBox Height="23" Margin="56,0,64,0" Name="cmbFicheros" VerticalAlignment="Top" />
+        <Label Content="Viendo: " Height="28" HorizontalAlignment="Left" Name="label1" VerticalAlignment="Top" />
+        <Button Content="Ver" Height="23" HorizontalAlignment="Right" Name="btnCargar" VerticalAlignment="Top" Width="52" Click="btnCargar_Click" />
+    </Grid>
+</UserControl>

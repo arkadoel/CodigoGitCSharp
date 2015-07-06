@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<tareas>
+	<tarea 
+		nombre="tarea 1" 
+		hora="19:50"
+		lunes="true" 
+		martes="true" 
+		miercoles="true" 
+		jueves="true" 
+		viernes="true" 
+		sabado="true" 
+		domingo="true"
+	/>
+</tareas>

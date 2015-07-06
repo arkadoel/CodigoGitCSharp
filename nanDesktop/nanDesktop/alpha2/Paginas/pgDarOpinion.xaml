@@ -1,0 +1,61 @@
+﻿<Page x:Class="nanDesktop.alpha2.Paginas.pgDarOpinion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="700"
+	Title="pgDarOpinion">
+
+    <Grid>
+        <Label
+				Content="Danos tu opinión o danos ideas:"
+				FontSize="18"
+				FontWeight="Heavy"
+				Foreground="Black"
+				Height="34"
+				HorizontalAlignment="Left" VerticalAlignment="Top"
+				Width="436" />
+        <TextBlock
+					FontFamily="Verdana"
+					FontSize="12"
+					Foreground="Gray"
+					TextWrapping="Wrap" HorizontalAlignment="Stretch"
+					VerticalAlignment="Top"
+					Margin="8,40,15,0" Height="39">
+				Tu opinion es muy importante para nuestro proyecto, haznos llegar cualquier opinion sobre la aplicacion.
+				¿Qué te ha gustado? ¿Qué mejorarias? ¿Qué ha fallado y qué pasos estabas dando?...
+        </TextBlock>
+        <Label
+					Foreground="Black" FontWeight="Heavy"
+					FontSize="12"
+					FontFamily="Verdana"
+					Content="Mensaje:" HorizontalAlignment="Left"
+					VerticalAlignment="Top"
+					Margin="8,70,0,0"
+					Width="130"
+					Height="27" />
+        <TextBox
+					Name="txtDarOpinion"
+					FontFamily="Verdana"
+					FontSize="11"
+					BorderBrush="Black"
+					BorderThickness="2"
+					AcceptsReturn="True"
+					VerticalScrollBarVisibility="Visible" HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					Margin="8,92,15,47" />
+        <Button Background="Gray"
+				FontSize="16"
+				Foreground="White"
+				BorderBrush="Gainsboro"
+				BorderThickness="3"
+					Name="btnEnviarOpinion"
+					HorizontalAlignment="Right"
+					Width="75"
+					Content="Enviar"
+					Height="33"
+					VerticalAlignment="Bottom"
+					Margin="0,0,15,8" Click="btnEnviarOpinion_Click" />
+    </Grid>
+</Page>

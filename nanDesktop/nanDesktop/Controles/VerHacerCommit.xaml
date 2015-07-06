@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+	x:Class="nanDesktop.Controles.VerHacerCommit" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+		<Grid
+			Grid.Column="0"
+			Grid.Row="0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Margin="0,0,0,0"
+			Width="441"
+			Height="393">
+			<Rectangle
+				Fill="#FFEAFCE3"
+				Stroke="#FF95A191"
+				RadiusX="20"
+				RadiusY="20"
+				StrokeThickness="3"
+				Margin="20" />
+			<Button
+				Grid.Column="0"
+				Grid.Row="0"
+				VerticalAlignment="Top"
+				Height="23"
+				Width="75"
+				HorizontalAlignment="Left"
+				Margin="312,73,0,0"
+				Content="Ver"
+				Name="btnVerPendientesAgregar"
+				Click="BtnVerPendientesAgregar_Click" />
+			<Label
+				Content="Mensaje"
+				Grid.Column="0"
+				Grid.Row="0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				Margin="40,110,0,0"
+				Width="130"
+				Height="29" />
+			<Button
+				Grid.Column="0"
+				Grid.Row="0"
+				Content="Guardar"
+				Name="btnGuardarCommit"
+				Height="23"
+				VerticalAlignment="Top"
+				Width="139"
+				HorizontalAlignment="Left"
+				Margin="248,316,0,0"
+				Click="BtnGuardarCommit_Click" />
+			<Label
+				Content="Ver si hay archivos pendientes de añadir al indice:"
+				Grid.Column="0"
+				Grid.Row="0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				Margin="35,73,0,0"
+				Width="268"
+				Height="28"
+				Name="lblTexto" />
+			<Label
+				Content="Nuevo guardado 'Commit'"
+				FontFamily="Courier New"
+				FontWeight="ExtraBlack"
+				FontSize="18"
+				Grid.Column="0"
+				Grid.Row="0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				Margin="78,31,0,0"
+				Width="312"
+				Height="33" />
+			<TextBox
+				Grid.Column="0"
+				AcceptsReturn="True"
+				TextWrapping="Wrap"
+				VerticalScrollBarVisibility="Visible"
+				Grid.Row="0"
+				BorderBrush="Black"
+				BorderThickness="3"
+				Name="txtMensaje"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				Margin="42,137,0,0"
+				Width="348"
+				Height="173" />
+		</Grid>
+	</Grid>
+</UserControl>

@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="nanDesktop.alpha2.Controles.DirVistaContenido"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="80" d:DesignWidth="600">
+    <Grid MouseLeave="Grid_MouseLeave" MouseEnter="Grid_MouseEnter">
+        <Rectangle Fill="#4B0049FF" Name="Resaltado"/>
+        <Image Height="72" HorizontalAlignment="Left" Margin="8,5,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="72" Source="/nanDesktop;component/Images/carpeta.png" >
+            <Image.Effect>
+                <DropShadowEffect ShadowDepth="3" BlurRadius="5" Direction="-90" RenderingBias="Performance" />
+            </Image.Effect>
+        </Image>
+        <TextBlock Text="Carpeta de proyecto 1" Foreground="Gray" TextWrapping="Wrap" FontSize="14" Height="41" Margin="86,27,71,0" Name="lblNombre" VerticalAlignment="Top" />
+
+    </Grid>
+</UserControl>

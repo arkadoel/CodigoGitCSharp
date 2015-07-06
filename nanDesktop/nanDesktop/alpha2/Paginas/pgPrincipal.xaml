@@ -1,0 +1,30 @@
+﻿<Page x:Class="nanDesktop.alpha2.Paginas.pgPrincipal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="700" 
+	Title="pgPrincipal">
+
+    <Grid>
+        <Label Content="Mis carpetas" FontSize="18" FontWeight="Heavy" Foreground="Black" Height="34" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="172" />
+        <ScrollViewer Name="scrolllslsl"
+			VerticalScrollBarVisibility="Visible"
+			CanContentScroll="True" Margin="12,70,12,12" MinHeight="364">
+            
+            <WrapPanel
+				Margin="0"
+				VerticalAlignment="Stretch"
+				HorizontalAlignment="Stretch"
+				Grid.Row="0"
+				Grid.Column="0"></WrapPanel>
+        </ScrollViewer>
+        <Image Height="28" HorizontalAlignment="Left" Margin="208,43,0,0" Name="btnVistaContenido" Stretch="Fill" VerticalAlignment="Top" Width="28" Source="/nanDesktop;component/Images/iconVistaContenido.png" MouseLeftButtonDown="btnVistaContenido_MouseLeftButtonDown" />
+        <Image Height="28" HorizontalAlignment="Left" Margin="238,43,0,0" Name="btnVistaIconos" Stretch="Fill" VerticalAlignment="Top" Width="28" Source="/nanDesktop;component/Images/iconVistaIcono.png" MouseLeftButtonDown="btnVistaIconos_MouseLeftButtonDown"/>
+        <Label Content="Vistas:" HorizontalContentAlignment="Right" Foreground="Gray" FontWeight="DemiBold" FontFamily="Arial" Height="27" HorizontalAlignment="Left" Margin="131,43,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="73" />
+        <Label Content="Filtro:" FontFamily="Arial" FontWeight="DemiBold" Foreground="Gray" Height="27" HorizontalAlignment="Right" HorizontalContentAlignment="Right" Margin="0,43,208,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="73" />
+        <TextBox Height="23" HorizontalAlignment="Right" BorderBrush="Gray" Foreground="DarkGray" TextAlignment="Center" VerticalContentAlignment="Center"  Background="{x:Null}" FontFamily="Courier New" FontSize="11" BorderThickness="1" Margin="0,48,12,0" Name="txtFiltro" TextChanged="txtFiltro_TextChanged" VerticalAlignment="Top" Width="190" />
+        <Image Height="28" HorizontalAlignment="Left" Margin="12,43,0,0" Name="btnAddCarpeta" Source="/nanDesktop;component/Images/addCarpeta.png" Stretch="Fill" VerticalAlignment="Top" Width="28" MouseLeftButtonDown="btnAddCarpeta_MouseLeftButtonDown"/>
+    </Grid>
+</Page>
